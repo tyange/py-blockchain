@@ -1,18 +1,18 @@
-name = 'Tyange'
-age = '33'
+global_name = 'Tyange'
+global_age = '33'
 
-print(name + age)
-
-
-def print_name_and_age():
-    print('Hi my name is' + name + '. ' + 'Age ' + age + '.')
+print(global_name + global_age)
 
 
-print_name_and_age()
+def print_name_and_age(name, age):
+    print('Hi my name is ' + name + '. ' + 'Age ' + age + '.')
 
 
-def how_much_live():
-    print(int(int(age) / 10))
+print_name_and_age('Tyange', '33')
 
 
-how_much_live()
+def how_much_live(age):
+    print(int(age / 10))
+
+
+how_much_live(33)
